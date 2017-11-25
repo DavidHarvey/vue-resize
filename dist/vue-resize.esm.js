@@ -35,7 +35,7 @@ function initCompat() {
 
 var ResizeObserver = { render: function render() {
 		var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "resize-observer", attrs: { "tabindex": "-1" } });
-	}, staticRenderFns: [], _scopeId: 'data-v-b329ee4c',
+	}, staticRenderFns: [], _scopeId: 'data-v-288f3a8c',
 	name: 'resize-observer',
 
 	methods: {
@@ -70,6 +70,7 @@ var ResizeObserver = { render: function render() {
 		this._resizeObject = object;
 		object.setAttribute('style', 'display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; pointer-events: none; z-index: -1;');
 		object.setAttribute('aria-hidden', 'true');
+		object.setAttribute('frameborder', '0');
 		object.onload = this.addResizeHandlers;
 		object.type = 'text/html';
 		if (isIE) {
